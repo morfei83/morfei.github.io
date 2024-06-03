@@ -13,7 +13,12 @@ header {
 }
 
 header .logo {
-    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+header .logo img {
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
 }
 
 nav ul {
