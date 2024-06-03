@@ -3,34 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Site</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My GitHub Pages Site</h1>
+        <div class="logo">My Logo</div>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#approach">Approach</a></li>
+                <li><a href="#references">References</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#about">About Us</a></li>
             </ul>
         </nav>
     </header>
+    
+    <section class="hero">
+        <h1>Delivering effective development processes</h1>
+        <p>Research-based leadership development for your organization's leaders and leadership teams.</p>
+    </section>
+    
     <section id="about">
         <h2>About Us</h2>
-        <p>This is a brief introduction about us.</p>
+        <p>This section describes your organization.</p>
     </section>
+    
     <section id="services">
         <h2>Services</h2>
-        <p>We offer amazing services.</p>
+        <div class="service">
+            <h3>Leadership Development</h3>
+            <p>We support leaders in creating effective leadership teams.</p>
+        </div>
+        <div class="service">
+            <h3>Individual Leadership Support</h3>
+            <p>We strengthen individuals in their leadership roles.</p>
+        </div>
     </section>
+    
+    <section id="references">
+        <h2>References</h2>
+        <blockquote>
+            <p>"Bang & Midelfart has significantly improved our leadership team effectiveness."</p>
+            <cite>Client Name, Company</cite>
+        </blockquote>
+    </section>
+    
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Get in touch with us.</p>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" required>
+            
+            <label for="contact">Email or Phone</label>
+            <input type="text" id="contact" name="contact" required>
+            
+            <label for="inquiry">Inquiry</label>
+            <textarea id="inquiry" name="inquiry" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
     </section>
+    
     <footer>
-        <p>&copy; 2024 My GitHub Pages Site</p>
+        <p>&copy; 2024 My Company</p>
+        <p>Design & development: My Team</p>
     </footer>
 </body>
 </html>
