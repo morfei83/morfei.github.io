@@ -12,12 +12,15 @@ header {
     text-align: center;
 }
 
-header .logo {
-    margin-bottom: 1rem;
+header .logo-wrapper {
+    background: #fff; /* Light background for contrast */
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px; /* Optional: rounded corners */
 }
 
-header .logo img {
-    max-width: 150px; /* Adjust size as needed */
+header .logo-wrapper img {
+    max-width: 100px; /* Adjust size as needed */
     height: auto;
 }
 
