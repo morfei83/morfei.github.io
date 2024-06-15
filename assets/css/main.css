@@ -3331,3 +3331,37 @@ input, select, textarea {
     width: 100%;
     height: auto;
 }
+/* Flexbox container for app section */
+.app-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Flexbox item for content */
+.app-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Flexbox item for image container */
+.app-image-container {
+    flex: 1;
+    max-width: 1000px; /* Adjust as needed for your design */
+}
+
+/* Image style */
+.app-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Logo style */
+.app-logo {
+    display: block;
+    margin: 20px 0;
+    max-width: 300px; /* Adjust as needed for your design */
+    width: 100%;
+    height: auto;
+}
