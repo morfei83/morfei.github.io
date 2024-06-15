@@ -3219,10 +3219,16 @@ input, select, textarea {
 			}
 
 	}
-.app-image {
+.app-image-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
+    justify-content: center; /* Center the image horizontally */
     margin: 20px 0; /* Add vertical margin if needed */
+}
+
+.app-image {
+    max-width: 3000px; /* Ensure the image is three times larger */
+    width: 100%;
+    height: auto;
 }
 
 .app-image img {
@@ -3258,11 +3264,5 @@ input, select, textarea {
 .app-info img {
     max-width: 1000px; /* Adjust the max-width as needed */
     width: 100%; /* Ensure responsiveness */
-    height: auto;
-}
-
-.app-image {
-    max-width: 1000px; /* Ensure the image is large enough */
-    width: 100%;
     height: auto;
 }
