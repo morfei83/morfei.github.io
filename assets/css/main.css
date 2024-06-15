@@ -3320,7 +3320,7 @@ input, select, textarea {
 /* Image style */
 .app-image {
     width: 100%;
-    max-width: 1000px; /* Ensure the image is larger */
+    max-width: 3000px; /* Ensure the image is larger */
     height: auto;
 }
 
