@@ -3314,12 +3314,13 @@ input, select, textarea {
 /* Flexbox item for image container */
 .app-image-container {
     flex: 1;
-    max-width: 1000px; /* Adjust as needed for your design */
+    max-width: 3000px; /* Adjust as needed for your design */
 }
 
 /* Image style */
 .app-image {
     width: 100%;
+    max-width: 1000px; /* Ensure the image is larger */
     height: auto;
 }
 
