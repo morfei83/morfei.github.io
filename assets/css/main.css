@@ -3219,24 +3219,45 @@ input, select, textarea {
 			}
 
 	}
-.app-image-container {
+/* Flexbox container for app section */
+.app-section {
     display: flex;
-    justify-content: center; /* Center the image horizontally */
-    margin: 20px 0; /* Add vertical margin if needed */
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
 }
 
-.app-image {
+/* Flexbox item for content */
+.app-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Flexbox item for image container */
+.app-image-container {
+    flex: 1;
     max-width: 3000px; /* Ensure the image is three times larger */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+}
+
+/* Image style */
+.app-image {
+    width: 100%;
+    max-width: 1500px; /* Adjust to ensure the image is larger */
+    height: auto;
+}
+
+/* Logo style */
+.app-logo {
+    display: block;
+    margin: 20px 0;
+    max-width: 300px; /* Adjust as needed for your design */
     width: 100%;
     height: auto;
 }
 
-.app-image img {
-    max-width: 1500px; /* Adjust the max-width as needed */
-    width: 100%; /* Ensure responsiveness */
-    height: auto;
-}
-
+/* Additional styles to ensure proper alignment */
 .content-wrapper {
     display: flex;
     align-items: flex-start; /* Align items at the start */
@@ -3249,120 +3270,8 @@ input, select, textarea {
 }
 
 .content-wrapper img {
-    max-width: 500px; /* Adjust this value to make the image larger */
+    max-width: 1500px; /* Adjust this value to make the image larger */
     width: 100%;
     height: auto;
 }
 
-.app-info {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between; /* Ensure proper spacing */
-}
-
-.app-info img {
-    max-width: 1000px; /* Adjust the max-width as needed */
-    width: 100%; /* Ensure responsiveness */
-    height: auto;
-}
-.app-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.app-content {
-    flex: 1;
-    min-width: 300px;
-}
-
-.app-image-container {
-    flex: 1;
-    max-width: 500px; /* Adjust this value to fit your design */
-}
-
-.app-image {
-    width: 100%;
-    height: auto;
-}
-
-.app-logo {
-    display: block;
-    margin: 20px 0;
-    max-width: 300px; /* Adjust this value to fit your design */
-    width: 100%;
-    height: auto;
-}
-/* New CSS added for the app section */
-
-/* Flexbox container for app section */
-.app-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-/* Flexbox item for content */
-.app-content {
-    flex: 1;
-    min-width: 300px;
-}
-
-/* Flexbox item for image container */
-.app-image-container {
-    flex: 1;
-    max-width: 3000px; /* Adjust as needed for your design */
-}
-
-/* Image style */
-.app-image {
-    width: 100%;
-    max-width: 3000px; /* Ensure the image is larger */
-    height: auto;
-}
-
-/* Logo style */
-.app-logo {
-    display: block;
-    margin: 20px 0;
-    max-width: 300px; /* Adjust as needed for your design */
-    width: 100%;
-    height: auto;
-}
-/* Flexbox container for app section */
-.app-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-/* Flexbox item for content */
-.app-content {
-    flex: 1;
-    min-width: 300px;
-}
-
-/* Flexbox item for image container */
-.app-image-container {
-    flex: 1;
-    max-width: 1000px; /* Adjust as needed for your design */
-}
-
-/* Image style */
-.app-image {
-    width: 100%;
-    height: auto;
-}
-
-/* Logo style */
-.app-logo {
-    display: block;
-    margin: 20px 0;
-    max-width: 300px; /* Adjust as needed for your design */
-    width: 100%;
-    height: auto;
-}
