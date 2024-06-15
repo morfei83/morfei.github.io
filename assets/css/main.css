@@ -3222,7 +3222,7 @@ input, select, textarea {
 /* Flexbox container for app section */
 .app-section {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Ensure no wrapping occurs */
     align-items: flex-start;
     gap: 20px;
 }
@@ -3236,7 +3236,7 @@ input, select, textarea {
 /* Flexbox item for image container */
 .app-image-container {
     flex: 1;
-    max-width: 3000px; /* Ensure the image is three times larger */
+    max-width: 1500px; /* Increase this value for a larger image */
     display: flex;
     justify-content: flex-end; /* Align image to the right */
 }
@@ -3244,7 +3244,7 @@ input, select, textarea {
 /* Image style */
 .app-image {
     width: 100%;
-    max-width: 1500px; /* Adjust to ensure the image is larger */
+    max-width: 1500px; /* Ensure the image is larger */
     height: auto;
 }
 
@@ -3274,4 +3274,5 @@ input, select, textarea {
     width: 100%;
     height: auto;
 }
+
 
