@@ -3219,3 +3219,14 @@ input, select, textarea {
 			}
 
 	}
+.app-image {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    margin: 20px 0; /* Add vertical margin if needed */
+}
+
+.app-image img {
+    max-width: 400px; /* Adjust the max-width as needed */
+    width: 100%; /* Ensure responsiveness */
+    height: auto;
+}
