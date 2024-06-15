@@ -3266,3 +3266,32 @@ input, select, textarea {
     width: 100%; /* Ensure responsiveness */
     height: auto;
 }
+.app-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.app-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.app-image-container {
+    flex: 1;
+    max-width: 500px; /* Adjust this value to fit your design */
+}
+
+.app-image {
+    width: 100%;
+    height: auto;
+}
+
+.app-logo {
+    display: block;
+    margin: 20px 0;
+    max-width: 300px; /* Adjust this value to fit your design */
+    width: 100%;
+    height: auto;
+}
