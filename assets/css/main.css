@@ -3247,3 +3247,22 @@ input, select, textarea {
     width: 100%;
     height: auto;
 }
+
+.app-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; /* Ensure proper spacing */
+}
+
+.app-info img {
+    max-width: 1000px; /* Adjust the max-width as needed */
+    width: 100%; /* Ensure responsiveness */
+    height: auto;
+}
+
+.app-image {
+    max-width: 1000px; /* Ensure the image is large enough */
+    width: 100%;
+    height: auto;
+}
