@@ -3226,7 +3226,7 @@ input, select, textarea {
 }
 
 .app-image img {
-    max-width: 500px; /* Adjust the max-width as needed */
+    max-width: 1500px; /* Adjust the max-width as needed */
     width: 100%; /* Ensure responsiveness */
     height: auto;
 }
