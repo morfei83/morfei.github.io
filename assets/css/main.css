@@ -3602,6 +3602,87 @@ input, select, textarea {
     }
 }
 
+/* Ensure text alignment for section two */
+#two {
+    padding: 20px;
+    text-align: left; /* Align text to the left */
+}
+
+#two h2, #two h3 {
+    text-align: left; /* Ensure headings are left-aligned */
+}
+
+#two p {
+    text-align: left; /* Ensure paragraphs are left-aligned */
+}
+
+.services {
+    display: flex;
+    justify-content: center; /* Center align the services within the container */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Allow services to wrap on smaller screens */
+}
+
+.service {
+    flex: 0 1 45%; /* Ensure each service takes up 45% of the container */
+    text-align: left; /* Ensure each service text is left-aligned */
+    margin: 10px;
+    box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
+}
+
+.service-icon {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Flexbox container for app section */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Image container style */
+.image-container {
+    flex: 0 1 45%; /* Adjust width as needed */
+    text-align: center;
+}
+
+.video-chat-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .services {
+        flex-direction: column; /* Stack services vertically on smaller screens */
+        align-items: center; /* Center align the services */
+    }
+
+    .service {
+        margin: 10px 0; /* Add some margin between stacked services */
+        max-width: 90%; /* Ensure the services don't take full width */
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content {
+        text-align: center;
+    }
+
+    .video-chat-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}
+
+
 
 /* Instagram Section */
 #instagram-section {
