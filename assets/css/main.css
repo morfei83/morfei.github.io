@@ -3351,9 +3351,11 @@ input, select, textarea {
     font-size: 1em;
     color: #666;
 }
+
 /* Section Two */
 #two {
-    text-align: center;
+    padding: 20px;
+    text-align: left; /* Align text to the left */
 }
 
 #two .app-logo {
@@ -3361,32 +3363,6 @@ input, select, textarea {
     width: 100%;
     height: auto;
     margin: 20px 0;
-}
-
-.services {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.service {
-    flex: 1;
-    max-width: 300px;
-    text-align: center;
-}
-
-.service-icon {
-    max-width: 100px;
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Ensure text alignment for section two */
-#two {
-    padding: 20px;
-    text-align: left; /* Align text to the left */
 }
 
 #two h2, #two h3 {
@@ -3399,7 +3375,7 @@ input, select, textarea {
 
 .services {
     display: flex;
-    justify-content: center; /* Center align the services within the container */
+    justify-content: space-between; /* Distribute services evenly */
     margin-top: 20px;
     flex-wrap: wrap; /* Allow services to wrap on smaller screens */
 }
@@ -3429,5 +3405,34 @@ input, select, textarea {
         margin: 10px 0; /* Add some margin between stacked services */
         max-width: 90%; /* Ensure the services don't take full width */
     }
+}
+
+/* Flexbox container for app section */
+.app-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Flexbox item for content */
+.app-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Flexbox item for image container */
+.app-image-container {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+}
+
+/* Image style */
+.app-image {
+    width: 100%;
+    max-width: 600px; /* Ensure the image fits within the container */
+    height: auto;
 }
 
