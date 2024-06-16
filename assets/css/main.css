@@ -3390,24 +3390,20 @@ input, select, textarea {
     text-align: left; /* Align text to the left */
 }
 
-#two h2, #two h3 {
-    text-align: left; /* Ensure headings are left-aligned */
-}
-
-#two p {
-    text-align: left; /* Ensure paragraphs are left-aligned */
+#two h2, #two h3, #two p {
+    text-align: left; /* Ensure headings and paragraphs are left-aligned */
 }
 
 .services {
     display: flex;
-    justify-content: center; /* Center align the services within the container */
+    justify-content: space-between; /* Space the service boxes evenly */
     margin-top: 20px;
     flex-wrap: wrap; /* Allow services to wrap on smaller screens */
 }
 
 .service {
     flex: 0 1 45%; /* Ensure each service takes up 45% of the container */
-    text-align: left; /* Ensure each service text is left-aligned */
+    text-align: center; /* Ensure each service text is centered */
     margin: 10px;
     box-sizing: border-box; /* Ensure padding and border are included in element's total width and height */
 }
@@ -3426,20 +3422,19 @@ input, select, textarea {
     width: 100%;
 }
 
-/* Image style */
 .video-chat-image {
     width: 100%;
     height: auto;
 }
 
-/* Overlay content */
 .overlay-content {
     position: absolute;
-    top: 20px;
+    bottom: 20px; /* Position the content at the bottom */
     left: 20px;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     padding: 10px;
     border-radius: 5px;
+    width: calc(100% - 40px); /* Ensure the content fits within the image with padding */
 }
 
 .app-logo {
@@ -3482,6 +3477,9 @@ input, select, textarea {
         margin-top: 20px;
     }
 }
+
+
+
 
 
 /* Instagram Section */
