@@ -3390,8 +3390,40 @@ input, select, textarea {
     text-align: left; /* Align text to the left */
 }
 
-#two h2, #two h3, #two p {
-    text-align: left; /* Ensure headings and paragraphs are left-aligned */
+.overlay-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.video-chat-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 5px;
+    width: calc(100% - 40px); /* Ensure the content fits within the image with padding */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.app-logo {
+    display: block;
+    max-width: 150px; /* Adjust as needed */
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.overlay-content h2, .overlay-content p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
 }
 
 .services {
@@ -3413,42 +3445,6 @@ input, select, textarea {
     width: 100%;
     height: auto;
     margin-bottom: 10px;
-}
-
-/* Container for the image and overlay content */
-.overlay-container {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-}
-
-.video-chat-image {
-    width: 100%;
-    height: auto;
-}
-
-.overlay-content {
-    position: absolute;
-    bottom: 20px; /* Position the content at the bottom */
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
-    padding: 10px;
-    border-radius: 5px;
-    width: calc(100% - 40px); /* Ensure the content fits within the image with padding */
-}
-
-.app-logo {
-    display: block;
-    max-width: 150px; /* Adjust as needed */
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.overlay-content p {
-    margin: 0;
-    font-size: 14px;
-    color: #333;
 }
 
 /* Media queries for responsive design */
@@ -3477,6 +3473,7 @@ input, select, textarea {
         margin-top: 20px;
     }
 }
+
 
 
 
