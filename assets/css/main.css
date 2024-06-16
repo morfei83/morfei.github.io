@@ -3275,5 +3275,34 @@ input, select, textarea {
     height: auto;
 }
 
+/* Style for the app-logo */
+.app-logo {
+    display: block;
+    margin: 20px 0;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+/* Style for the service sections */
+.service {
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.service h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.service p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #666;
+}
 
 
