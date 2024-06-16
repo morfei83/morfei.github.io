@@ -3351,4 +3351,35 @@ input, select, textarea {
     font-size: 1em;
     color: #666;
 }
+/* Section Two */
+#two {
+    text-align: center;
+}
+
+#two .app-logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.service {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.service-icon {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
 
