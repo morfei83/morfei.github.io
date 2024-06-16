@@ -3382,4 +3382,36 @@ input, select, textarea {
     height: auto;
     margin-bottom: 10px;
 }
+/* Style for section two */
+#two {
+    text-align: left; /* Align text to the left */
+    padding: 20px;
+}
+
+#two h2, #two h3 {
+    text-align: left; /* Ensure headings are left-aligned */
+}
+
+#two p {
+    text-align: left; /* Ensure paragraphs are left-aligned */
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.service {
+    flex: 1;
+    text-align: center; /* Center align the content of each service */
+    margin: 0 10px;
+}
+
+.service-icon {
+    max-width: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
 
