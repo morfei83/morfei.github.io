@@ -3503,17 +3503,26 @@ input, select, textarea {
     margin-bottom: 10px;
 }
 
-.overlay-content h2, .overlay-content p {
-    font-size: 18px; /* Adjust font size for better visibility */
+.overlay-content h2 {
+    font-size: 24px; /* Adjust font size for better visibility */
     color: #333;
     margin: 10px 0;
 }
 
 .overlay-content p {
-    margin: 0;
-    font-size: 14px; /* Adjust font size for better visibility */
+    font-size: 18px; /* Adjust font size for better visibility */
     color: #333;
+    margin: 10px 0;
 }
+
+.service h4 {
+    font-size: 20px; /* Adjust font size for better visibility */
+}
+
+.service p {
+    font-size: 16px; /* Adjust font size for better visibility */
+}
+
 
 
 
