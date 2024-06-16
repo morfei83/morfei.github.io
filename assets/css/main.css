@@ -3749,8 +3749,8 @@ p {
 
 
 
-/* General Styles for Mobile Devices */
-@media screen and (max-width: 480px) {
+/* General Mobile Styles */
+@media screen and (max-width: 768px) {
     body, input, select, textarea {
         font-size: 14pt;
         line-height: 1.6em;
@@ -3765,18 +3765,23 @@ p {
         font-size: 14pt;
     }
 
-    /* Adjust header styles */
+    /* Header */
     #header {
         padding: 2em 1em;
         width: 100%;
         text-align: center;
+        position: static;
     }
 
     #header h1 {
         font-size: 1.5em;
     }
 
-    /* Adjust main content styles */
+    #header .image.avatar {
+        display: none;
+    }
+
+    /* Main Content */
     #main {
         margin: 0;
         padding: 2em 1em;
@@ -3811,13 +3816,9 @@ p {
         align-items: center;
     }
 
-    .app-content {
+    .app-content, .app-image-container {
         width: 90%;
         margin-bottom: 20px;
-    }
-
-    .app-image-container {
-        width: 90%;
     }
 
     .app-image {
@@ -3835,4 +3836,5 @@ p {
         width: 90%;
     }
 }
+
 
