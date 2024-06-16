@@ -3400,11 +3400,12 @@ input, select, textarea {
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    text-align: left; /* Ensure services container text is left-aligned */
 }
 
 .service {
     flex: 1;
-    text-align: center; /* Center align the content of each service */
+    text-align: left; /* Ensure each service text is left-aligned */
     margin: 0 10px;
 }
 
