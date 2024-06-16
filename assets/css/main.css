@@ -3838,3 +3838,93 @@ p {
 }
 
 
+
+
+
+/* General styles for larger screens */
+.overlay-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.video-chat-image {
+    width: 100%;
+    height: auto;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.overlay-content h2 {
+    font-size: 2em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.overlay-content p {
+    font-size: 16pt;
+    color: #333;
+    margin: 10px 0;
+}
+
+.app-logo {
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .overlay-container {
+        flex-direction: column;
+        align-items: center;
+        position: relative; /* Ensure the container maintains its position */
+    }
+
+    .overlay-content {
+        position: static; /* Reset position to flow with document */
+        background-color: transparent; /* Remove background for simplicity */
+        text-align: center; /* Center align text */
+        padding: 10px;
+    }
+
+    .overlay-content h2, .overlay-content p {
+        margin: 5px 0;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        margin: 10px 0;
+        max-width: 90%;
+    }
+
+    .video-chat-image {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Add padding to sections to prevent content from touching screen edges */
+    #main {
+        padding: 2em 1em;
+    }
+}
+
