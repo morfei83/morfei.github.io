@@ -3502,3 +3502,24 @@ input, select, textarea {
     font-size: 14px;
     color: #333;
 }
+
+/* Instagram Section */
+#instagram-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 40px 0;
+}
+#instagram-section .instagram-content {
+    flex: 1;
+    min-width: 300px;
+}
+#instagram-section .instagram-feed {
+    flex: 1;
+    max-width: 600px;
+}
+.instagram-embed {
+    width: 100%;
+    height: 600px; /* Adjust height as needed */
+}
