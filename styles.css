@@ -95,12 +95,9 @@ footer {
 
 /* New styles for logo */
 .image.logo img {
-    max-width: 100%;
+    max-width: 150px; /* Adjust the size to your preference */
     height: auto;
-    border-radius: 0; /* Ensure the logo does not have rounded corners */
     display: block;
     margin: 0 auto;
-    padding: 10px; /* Optional: add padding to align with the design */
-    background: #fff; /* Optional: add a background to make it stand out */
-    border-radius: 10px; /* Optional: rounded corners */
+    padding: 0; /* Optional: add padding to align with the design */
 }
