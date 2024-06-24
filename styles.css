@@ -92,3 +92,15 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+
+/* New styles for logo */
+.image.logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0; /* Ensure the logo does not have rounded corners */
+    display: block;
+    margin: 0 auto;
+    padding: 10px; /* Optional: add padding to align with the design */
+    background: #fff; /* Optional: add a background to make it stand out */
+    border-radius: 10px; /* Optional: rounded corners */
+}
