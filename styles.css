@@ -93,11 +93,4 @@ footer {
     padding: 1rem 0;
 }
 
-/* New styles for logo */
-.image.logo img {
-    max-width: 150px; /* Adjust the size to your preference */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    padding: 0; /* Optional: add padding to align with the design */
-}
+
