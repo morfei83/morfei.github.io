@@ -3245,16 +3245,19 @@ input, select, textarea {
 /* Flexbox item for image container */
 .app-image-container {
     flex: 1;
-    max-width: 3000px; /* Increase this value for a larger image */
+    max-width: 600px; /* Set a max width for larger screens */
     display: flex;
-    justify-content: flex-end; /* Align image to the right */
+    justify-content: center; /* Center the image horizontally */
+    margin: 0 auto; /* Center the container within its parent */
+    overflow: hidden; /* Hide any overflow */
+    padding: 20px; /* Add some padding if needed */
 }
 
 /* Image style */
 .app-image {
     width: 100%;
-    max-width: 3000px; /* Ensure the image is three times larger */
     height: auto;
+    object-fit: contain; /* Ensure the image scales correctly within its container */
 }
 
 /* Logo style */
