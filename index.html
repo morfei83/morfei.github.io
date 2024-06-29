@@ -40,10 +40,17 @@
         .app-image-container {
             flex: 1;
             max-width: 1000px;
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            margin: 0 auto; /* Center the container within its parent */
+            overflow: hidden; /* Hide any overflow */
+            padding: 20px; /* Add some padding if needed */
+            animation: slideInFromRight 1s ease-out; /* Apply the slide-in animation */
         }
         .app-image {
             width: 100%;
             height: auto;
+            object-fit: contain; /* Ensure the image scales correctly within its container */
         }
         .app-logo {
             display: block;
@@ -71,6 +78,18 @@
         }
         .instagram-embed {
             width: 100%;
+        }
+
+        /* Define the keyframes animation */
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
     </style>
 </head>
@@ -108,54 +127,52 @@
                 </div>
             </div>
             <div class="app-image-container">
-                <img src="path/to/your/image.jpg" alt="Description of image" class="app-image">
+                <img src="images/your-image.jpg" alt="Description of image" class="app-image">
             </div>
         </div>
     </section>
 
-<!-- Section Two -->
-<section id="two">
-    <div class="overlay-container">
-        <img src="images/VIDEOCHAT FRA COLOURBOX.jpg" alt="Video Chat Image" class="video-chat-image" />
-        <div class="overlay-content">
-            <h2>Tjenester og priser</h2>
-            <img src="images/Sovnsenter-logo-no-bg.png" alt="Sovnsenter Logo" class="app-logo" />            
-            <p>Alle konsultasjoner foregår digitalt.<br /> Vi har lang klinisk erfaring med <br />alle typer søvnlidelser og vi er <br />ledende i landet når det gjelder behandling <br /> med <strong>kognitiv atferdsterapi for søvnvansker</strong>.</p>
-            <div class="services">
-                <div class="service">
-                    <img src="images/magnifying-glass-icon1.jpg" alt="Første time" class="service-icon" />
-                    <h4>FØRSTE TIME<br /> <strong>1800kr</strong>/time.</h4>
-                    <p>Varer i 45 min og inkluderer utredning, diagnostisering, og oppstart av behandling.</p>
-                </div>
-                <div class="service">
-                    <img src="images/therapy-icon1.jpg" alt="Kontrolltime" class="service-icon" />
-                    <h4>KONTROLLTIME<br /> <strong>1400kr</strong>/time.</h4>
-                    <p>Varer i 30-40 minutter og inkluderer ev. videre utredning, og behandling.</p>
+    <!-- Section Two -->
+    <section id="two">
+        <div class="overlay-container">
+            <img src="images/VIDEOCHAT FRA COLOURBOX.jpg" alt="Video Chat Image" class="video-chat-image" />
+            <div class="overlay-content">
+                <h2>Tjenester og priser</h2>
+                <img src="images/Sovnsenter-logo-no-bg.png" alt="Sovnsenter Logo" class="app-logo" />            
+                <p>Alle konsultasjoner foregår digitalt.<br /> Vi har lang klinisk erfaring med <br />alle typer søvnlidelser og vi er <br />ledende i landet når det gjelder behandling <br /> med <strong>kognitiv atferdsterapi for søvnvansker</strong>.</p>
+                <div class="services">
+                    <div class="service">
+                        <img src="images/magnifying-glass-icon1.jpg" alt="Første time" class="service-icon" />
+                        <h4>FØRSTE TIME<br /> <strong>1800kr</strong>/time.</h4>
+                        <p>Varer i 45 min og inkluderer utredning, diagnostisering, og oppstart av behandling.</p>
+                    </div>
+                    <div class="service">
+                        <img src="images/therapy-icon1.jpg" alt="Kontrolltime" class="service-icon" />
+                        <h4>KONTROLLTIME<br /> <strong>1400kr</strong>/time.</h4>
+                        <p>Varer i 30-40 minutter og inkluderer ev. videre utredning, og behandling.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-        
+    </section>
 
-
-<!-- Instagram Section -->
-<section id="instagram">
-    <h2><a href="https://www.instagram.com/morfei_sovnsenter" target="_blank">Følg oss på Instagram!</a></h2>
-    <p>Her legger vi ut informasjon om søvn og søvnvansker som kan være interessant og nyttig for deg som sliter med å få sove, eller for deg som bare er interessert i søvn.</p>
-    <div class="instagram-feed">
-        <!-- Curator.io feed -->
-        <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
-        <script type="text/javascript">
-        /* curator-feed-default-feed-layout */
-        (function(){
-        var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
-        i.src="https://cdn.curator.io/published/ba9b14dd-ca18-49e5-9b4b-96f6b014a6e4.js";
-        e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-        })();
-        </script>
-    </div>
-</section>
+    <!-- Instagram Section -->
+    <section id="instagram">
+        <h2><a href="https://www.instagram.com/morfei_sovnsenter" target="_blank">Følg oss på Instagram!</a></h2>
+        <p>Her legger vi ut informasjon om søvn og søvnvansker som kan være interessant og nyttig for deg som sliter med å få sove, eller for deg som bare er interessert i søvn.</p>
+        <div class="instagram-feed">
+            <!-- Curator.io feed -->
+            <div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+            <script type="text/javascript">
+            /* curator-feed-default-feed-layout */
+            (function(){
+            var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+            i.src="https://cdn.curator.io/published/ba9b14dd-ca18-49e5-9b4b-96f6b014a6e4.js";
+            e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+            })();
+            </script>
+        </div>
+    </section>
 
     <!-- Three -->
     <section id="three">
