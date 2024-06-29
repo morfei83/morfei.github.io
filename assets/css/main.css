@@ -4009,3 +4009,58 @@ ul.actions li.primary:first-child {
     border-left: 0;
     padding-left: 0;
 }
+
+/* General hover styles for links */
+a {
+    -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-bottom: dotted 1px;
+    color: #49bf9d;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    color: #49bf9d !important;
+    text-decoration: none;
+    background-color: transparent; /* Remove background color on hover */
+}
+
+/* Icon hover styles */
+ul.icons li a:hover {
+    background-color: transparent; /* Remove background color on hover */
+    color: #49bf9d !important; /* Keep color change on hover */
+    transform: none; /* Prevent size increase on hover */
+}
+
+/* Label hover styles */
+ul.labeled-icons li:hover {
+    background-color: transparent; /* Remove background color on hover */
+    color: #49bf9d !important; /* Keep color change on hover */
+    letter-spacing: normal; /* Prevent letter spacing change on hover */
+    font-size: 1em; /* Prevent font size change on hover */
+    transition: color 0.3s ease; /* Ensure only color changes on hover */
+}
+
+/* Services hover styles */
+ul.features li:hover {
+    background-color: transparent; /* Remove background color on hover */
+    transition: color 0.3s ease; /* Ensure only color changes on hover */
+    letter-spacing: normal; /* Prevent letter spacing change on hover */
+    font-size: 1em; /* Prevent font size change on hover */
+}
+
+/* Specific styles for icons */
+.icon:hover {
+    background-color: transparent; /* Remove background color on hover */
+    transform: none; /* Prevent size increase on hover */
+}
+
+/* Remove font size increase and letter spacing change */
+ul li:hover {
+    letter-spacing: normal; /* Prevent letter spacing change */
+    font-size: 1em; /* Prevent font size change */
+    transition: color 0.3s ease; /* Ensure only color changes on hover */
+}
