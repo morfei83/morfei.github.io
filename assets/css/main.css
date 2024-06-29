@@ -3245,18 +3245,17 @@ input, select, textarea {
 /* Flexbox item for image container */
 .app-image-container {
     flex: 1;
-    max-width: 3000px; /* Increase the max width for larger images */
     display: flex;
     justify-content: center; /* Center the image horizontally */
     margin: 0 auto; /* Center the container within its parent */
     overflow: hidden; /* Hide any overflow */
     padding: 20px; /* Add some padding if needed */
+    animation: slideInFromRight 1s ease-out; /* Apply the slide-in animation */
 }
 
 /* Image style */
 .app-image {
     width: 100%;
-    max-width: 3000px; /* Ensure the image can be larger */
     height: auto;
     object-fit: contain; /* Ensure the image scales correctly within its container */
 }
@@ -3938,6 +3937,17 @@ p {
     /* Add padding to sections to prevent content from touching screen edges */
     #main {
         padding: 2em 1em;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 }
 
