@@ -4020,7 +4020,7 @@ ul li:hover {
 
 /* Specific styles for icons */
 ul.icons li a:hover {
-    background-color: transparent; /* Remove background color on hover */
+    background-color: transparent !important; /* Remove background color on hover */
     color: #49bf9d !important; /* Keep color change on hover */
     transform: none; /* Prevent size increase on hover */
 }
