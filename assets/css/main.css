@@ -3265,7 +3265,6 @@ input, select, textarea {
     padding: 20px; /* Add some padding if needed */
     animation: slideInFromRight 1s ease-out forwards; /* Apply the slide-in animation */
     animation-fill-mode: forwards; /* Ensure the final state is maintained */
-    opacity: 0; /* Start with opacity 0 for the animation */
 }
 
 /* Image style */
