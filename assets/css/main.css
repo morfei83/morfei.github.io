@@ -3242,6 +3242,17 @@ input, select, textarea {
     min-width: 300px;
 }
 
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
 /* Flexbox item for image container */
 .app-image-container {
     flex: 1;
@@ -3937,17 +3948,6 @@ p {
     /* Add padding to sections to prevent content from touching screen edges */
     #main {
         padding: 2em 1em;
-    }
-}
-
-@keyframes slideInFromRight {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
     }
 }
 
