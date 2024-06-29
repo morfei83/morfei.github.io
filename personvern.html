@@ -1,69 +1,195 @@
 <!DOCTYPE HTML>
-<html lang="no">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personvernerklæring - Morfei søvnsenter</title>
-    <link rel="stylesheet" href="assets/css/main.css">
+    <title>Morfei søvnsenter</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        /* Additional styling for the privacy page */
-        .content {
+        .store-buttons img {
+            height: 60px;
+            margin: 5px;
+            border: none;
+            box-shadow: none;
+            background: none;
+            width: auto;
+        }
+        .store-buttons {
+            display: flex;
+            align-items: center;
+        }
+        .store-buttons a {
+            display: inline-block;
+            border: none;
+        }
+        .app-logo {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+        .app-section {
             display: flex;
             flex-wrap: wrap;
             align-items: flex-start;
             gap: 20px;
-            margin: 20px;
         }
-        .content img {
-            max-width: 300px;
-            height: auto;
-            margin-right: 20px;
-        }
-        .content div {
+        .app-content {
             flex: 1;
             min-width: 300px;
         }
-        .logo {
+        .app-image-container {
+            flex: 1;
+            max-width: 1000px;
+            display: flex;
+            justify-content: center; /* Center the image horizontally */
+            margin: 0 auto; /* Center the container within its parent */
+            overflow: hidden; /* Hide any overflow */
+            padding: 20px; /* Add some padding if needed */
+            animation: slideInFromRight 1s ease-out; /* Apply the slide-in animation */
+        }
+        .app-image {
+            width: 100%;
+            height: auto;
+            object-fit: contain; /* Ensure the image scales correctly within its container */
+        }
+        .app-logo {
             display: block;
-            margin: 20px auto;
-            max-width: 200px;
+            margin: 20px 0;
+            max-width: 300px;
+            width: 100%;
             height: auto;
         }
-        h1, h2 {
-            color: #333;
+
+        /* Instagram Section */
+        #instagram-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            gap: 20px;
+            margin: 40px 0;
         }
-        p {
-            color: #666;
+        #instagram-section .instagram-content {
+            flex: 1;
+            min-width: 300px;
         }
-        /* Full height for the sidebar image */
-        .sidebar-image {
+        #instagram-section .instagram-feed {
+            flex: 1;
+            max-width: 600px;
+        }
+        .instagram-embed {
             width: 100%;
-            height: 100vh;
-            object-fit: cover;
-            position: sticky;
-            top: 0;
+        }
+
+        /* Define the keyframes animation */
+        @keyframes slideInFromRight {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Added styles for link and hover */
+        a {
+            -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+            border-bottom: dotted 1px;
+            color: #49bf9d;
+            text-decoration: none;
+        }
+
+        a:hover {
+            border-bottom-color: transparent;
+            color: #49bf9d !important;
+            text-decoration: none;
+            background-color: #f0f0f0; /* Added background color on hover */
+        }
+
+        /* Added styles for list item hover effect */
+        ul li:hover {
+            letter-spacing: 2px; /* Increased spacing */
+            font-size: 1.3em; /* Increased font size */
+            background-color: #f0f0f0; /* Changed background color */
+            transition: background-color 0.3s ease, letter-spacing 0.3s ease, font-size 0.3s ease;
+        }
+
+        /* Added styles for .features and ul.actions */
+        .features {
+            margin: 0 0 2em 0;
+        }
+
+        .features li {
+            border-top: solid 2px #f2f2f2;
+            padding: 0.75em 0;
+            display: flex;
+            align-items: center; /* Center-align items */
+            transition: background-color 0.3s ease;
+        }
+
+        .features li:hover {
+            background-color: #f0f0f0; /* Changed background color on hover */
+        }
+
+        .features li .icon {
+            margin-right: 0.75em;
+        }
+
+        ul.actions {
+            margin: 0 0 2em 0;
+            padding-left: 1em; /* Added padding for nested list items */
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em; /* Added gap for better spacing */
+        }
+
+        ul.actions li {
+            padding: 0;
+            display: inline-block;
+        }
+
+        ul.actions li.primary {
+            padding-left: 0;
+            border-left: solid 1px rgba(144, 144, 144, 0.25);
+            padding: 0.5em 0 0 1em;
+        }
+
+        ul.actions li.primary:first-child {
+            border-left: 0;
+            padding-left: 0;
         }
     </style>
 </head>
-<body>
-    <!-- Sidebar -->
+<body class="is-preload">
+
+    <!-- Header -->
     <header id="header">
         <div class="inner">
             <a href="#" class="image avatar"><img src="images/morfei.png" alt="Morfei Logo" /></a>
             <h1>Få hjelp til å <strong>sove bedre</strong>.<br />
                 Utredning og behandling for alle typer<br />
                 søvnvansker via videokonsultasjon.</h1>
-            <ul class="icons">
-                <li><a href="https://www.instagram.com/morfei_sovnsenter" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                <li><a href="mailto:kontakt@morfei.no" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-            </ul>
         </div>
     </header>
 
-    <!-- Main content -->
+    <!-- Main -->
+    <div id="main">
+
+<!-- One -->
+<section id="one">
+    <header class="major">
+        <h2>Last ned vår gratis app: <br /></h2>
+        <img src="images/color-logo-no-bg.png" alt="Morfei Logo" class="app-logo" />
+    </header>
+<!-- Main content -->
     <div id="main">
         <div class="content">
-            <img src="images/ULRIKEN_1.jpg" alt="Illustrative Image" class="sidebar-image">
+            <img src="images/VIDEOCHAT FRA COLOURBOX.jpg" alt="Illustrative Image" class="sidebar-image">
             <div>
                 <h1>Personvernerklæring for Morfei søvndagbok</h1>
                 <p>Alle data du legger inn i Morfei søvndagbok-appen lagres lokalt på din enhet. Vi samler ikke inn, lagrer, eller overfører noen form for personlig eller sensitiv informasjon til eksterne kilder.</p>
@@ -84,5 +210,80 @@
             </div>
         </div>
     </div>
-</body>
+</section>
+
+    <!-- Three -->
+    <section id="three">
+        <h2>Kontakt</h2>
+        <p>Her kan du kontakte Morfei søvnsenter for å bestille time eller hvis du har andre spørsmål. Du kan også ta kontakt på e-post: <strong>kontakt@morfei.no</strong>, eller tlf: <strong>97 65 93 26</strong>.</p>
+        <div class="row">
+            <div class="col-8 col-12-small">
+                <form method="POST" action="https://formspree.io/f/mrgnnkyv">
+                    <input type="hidden" name="_replyto" value="kontakt@morfei.no">
+                    <div class="row gtr-uniform gtr-50">
+                        <div class="col-6 col-12-xsmall">
+                            <label for="name">Navn</label>
+                            <input type="text" name="name" id="name" placeholder="Navn" required />
+                        </div>
+                        <div class="col-6 col-12-xsmall">
+                            <label for="email">E-post</label>
+                            <input type="email" name="email" id="email" placeholder="E-post" required />
+                        </div>
+                        <div class="col-12">
+                            <label for="message">Melding</label>
+                            <textarea name="message" id="message" placeholder="Melding" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input type="submit" value="Send melding" /></li>
+                    </ul>
+                </form>
+            </div>
+            <div class="col-4 col-12-small">
+                <ul class="labeled-icons">
+                    <li>
+                        <h3 class="icon solid fa-home"><span class="label">Adresse</span></h3>
+                        Morfei AS<br />
+                        Jacob Sæthres veg 20A<br />
+                        5232 Paradis<br />
+                        Bergen, Norge<br />
+                        Org. nr.: 930733679
+                    </li>
+                    <li>
+                        <h3 class="icon solid fa-mobile-alt"><span class="label">Telefon</span></h3>
+                            (+47) 976-59-326
+                        </li>
+                        <li>
+                            <h3 class="icon solid fa-envelope"><span class="label">E-post</span></h3>
+                            <a href="mailto:kontakt@morfei.no">kontakt@morfei.no</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li><a href="https://www.instagram.com/morfei_sovnsenter" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <li><a href="mailto:kontakt@morfei.no" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; 2023 Morfei AS. Alle rettigheter forbeholdt.</li>
+                    <li>Design: <a href="https://www.instagram.com/morfei_sovnsenter">Øystein Vedaa</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.poptrox.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
