@@ -3264,7 +3264,8 @@ input, select, textarea {
     overflow: hidden; /* Hide any overflow */
     padding: 20px; /* Add some padding if needed */
     animation: slideInFromRight 1s ease-out forwards; /* Apply the slide-in animation */
-    opacity: 1; /* Ensure the container is visible */
+    animation-fill-mode: forwards; /* Ensure the final state is maintained */
+    opacity: 0; /* Start with opacity 0 for the animation */
 }
 
 /* Image style */
