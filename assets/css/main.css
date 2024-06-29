@@ -3954,3 +3954,74 @@ p {
     }
 }
 
+/* Added styles for link and hover */
+a {
+    -moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-bottom: dotted 1px;
+    color: #49bf9d;
+    text-decoration: none;
+}
+
+a:hover {
+    border-bottom-color: transparent;
+    color: #49bf9d !important;
+    text-decoration: none;
+    background-color: #f0f0f0; /* Added background color on hover */
+}
+
+/* Added styles for list item hover effect */
+ul li:hover {
+    letter-spacing: 2px; /* Increased spacing */
+    font-size: 1.3em; /* Increased font size */
+    background-color: #f0f0f0; /* Changed background color */
+    transition: background-color 0.3s ease, letter-spacing 0.3s ease, font-size 0.3s ease;
+}
+
+/* Added styles for .features and ul.actions */
+.features {
+    margin: 0 0 2em 0;
+}
+
+.features li {
+    border-top: solid 2px #f2f2f2;
+    padding: 0.75em 0;
+    display: flex;
+    align-items: center; /* Center-align items */
+    transition: background-color 0.3s ease;
+}
+
+.features li:hover {
+    background-color: #f0f0f0; /* Changed background color on hover */
+}
+
+.features li .icon {
+    margin-right: 0.75em;
+}
+
+ul.actions {
+    margin: 0 0 2em 0;
+    padding-left: 1em; /* Added padding for nested list items */
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em; /* Added gap for better spacing */
+}
+
+ul.actions li {
+    padding: 0;
+    display: inline-block;
+}
+
+ul.actions li.primary {
+    padding-left: 0;
+    border-left: solid 1px rgba(144, 144, 144, 0.25);
+    padding: 0.5em 0 0 1em;
+}
+
+ul.actions li.primary:first-child {
+    border-left: 0;
+    padding-left: 0;
+}
