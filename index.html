@@ -107,15 +107,15 @@
             border-bottom-color: transparent;
             color: #49bf9d !important;
             text-decoration: none;
-            background-color: #f0f0f0; /* Added background color on hover */
+            background-color: transparent; /* Ensure no background color on hover */
         }
 
         /* Added styles for list item hover effect */
         ul li:hover {
             letter-spacing: 2px; /* Increased spacing */
             font-size: 1.3em; /* Increased font size */
-            background-color: #f0f0f0; /* Changed background color */
-            transition: background-color 0.3s ease, letter-spacing 0.3s ease, font-size 0.3s ease;
+            background-color: transparent; /* Ensure no background color on hover */
+            transition: letter-spacing 0.3s ease, font-size 0.3s ease;
         }
 
         /* Added styles for .features and ul.actions */
@@ -132,7 +132,7 @@
         }
 
         .features li:hover {
-            background-color: #f0f0f0; /* Changed background color on hover */
+            background-color: transparent; /* Ensure no background color on hover */
         }
 
         .features li .icon {
