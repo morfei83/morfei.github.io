@@ -163,6 +163,29 @@
             border-left: 0;
             padding-left: 0;
         }
+
+        /* Remove hover background for icons */
+        ul.icons li a:hover {
+            background-color: transparent !important; /* Remove background color on hover */
+            color: #49bf9d !important; /* Keep color change on hover */
+            transform: none !important; /* Prevent size increase on hover */
+        }
+
+        /* Remove hover background for labeled icons */
+        ul.labeled-icons li:hover {
+            background-color: transparent !important; /* Remove background color on hover */
+            color: inherit !important; /* Keep original text color */
+            transform: none !important; /* Prevent size increase on hover */
+        }
+
+        ul.labeled-icons li h3 {
+            color: inherit; /* Inherit the color */
+            transition: color 0.3s ease; /* Smooth transition for color change */
+        }
+
+        ul.labeled-icons li:hover h3 {
+            color: #49bf9d !important; /* Color change on hover */
+        }
     </style>
 </head>
 <body class="is-preload">
@@ -298,27 +321,27 @@
         </section>
     </div>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <div class="inner">
-                <ul class="icons">
-                    <li><a href="https://www.instagram.com/morfei_sovnsenter" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-                    <li><a href="mailto:kontakt@morfei.no" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>&copy; 2023 Morfei AS. Alle rettigheter forbeholdt.</li>
-                    <li>Design: <a href="https://www.instagram.com/morfei_sovnsenter">Øystein Vedaa</a></li>
-                </ul>
-            </div>
-        </footer>
+<!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="https://www.instagram.com/morfei_sovnsenter" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                <li><a href="mailto:kontakt@morfei.no" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; 2023 Morfei AS. Alle rettigheter forbeholdt.</li>
+                <li>Design: <a href="https://www.instagram.com/morfei_sovnsenter">Øystein Vedaa</a></li>
+            </ul>
+        </div>
+    </footer>
 
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.poptrox.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
-    </body>
+</body>
 </html>
