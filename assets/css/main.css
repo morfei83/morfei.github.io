@@ -3230,8 +3230,10 @@ input, select, textarea {
 	}
 /* Flexbox container for app section */
 .app-section {
-    flex-direction: column; /* Stack the content vertically */
-    align-items: center; /* Center align the items */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 /* Flexbox item for content */
@@ -3261,8 +3263,8 @@ input, select, textarea {
     margin: 0 auto; /* Center the container within its parent */
     overflow: hidden; /* Hide any overflow */
     padding: 20px; /* Add some padding if needed */
-    animation: slideInFromRight 1s ease-out forwards; /* Slide in animation and stay visible */
-    opacity: 0; /* Ensure it starts hidden */
+    animation: slideInFromRight 1s ease-out forwards; /* Apply the slide-in animation */
+    opacity: 0; /* Start with opacity 0 for the animation */
 }
 
 /* Image style */
@@ -3502,9 +3504,9 @@ input, select, textarea {
 
 /* Media queries for responsive design */
 @media screen and (max-width: 768px) {
-    .overlay-container {
-        flex-direction: column;
-        align-items: center;
+    .app-section {
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center align the items */
     }
 
     .overlay-content {
@@ -3843,7 +3845,8 @@ p {
     }
 
 .app-image-container {
-    max-width: 90%; /* Ensure the image container does not take up full width */
+        max-width: 90%; /* Ensure the image container does not take up full width */
+        opacity: 1; /* Ensure the image is visible on smaller screens */
 }
 
 .app-image {
