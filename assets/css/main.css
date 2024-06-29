@@ -3263,8 +3263,8 @@ input, select, textarea {
     margin: 0 auto; /* Center the container within its parent */
     overflow: hidden; /* Hide any overflow */
     padding: 20px; /* Add some padding if needed */
-    animation: slideInFromRight 1s ease-out forwards; /* Apply the slide-in animation */
     opacity: 0; /* Initially hidden */
+    animation: slideInFromRight 1s ease-out forwards; /* Ensure the image stays visible after sliding in */
 }
 
 /* Image style */
