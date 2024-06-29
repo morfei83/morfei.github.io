@@ -3264,7 +3264,7 @@ input, select, textarea {
     overflow: hidden; /* Hide any overflow */
     padding: 20px; /* Add some padding if needed */
     animation: slideInFromRight 1s ease-out forwards; /* Apply the slide-in animation */
-    opacity: 0; /* Start with opacity 0 for the animation */
+    opacity: 1; /* Ensure the container is visible */
 }
 
 /* Image style */
@@ -3272,15 +3272,6 @@ input, select, textarea {
     width: 100%;
     height: auto;
     object-fit: contain; /* Ensure the image scales correctly within its container */
-}
-
-/* Logo style */
-.app-logo {
-    display: block;
-    margin: 20px 0;
-    max-width: 300px; /* Adjust as needed for your design */
-    width: 100%;
-    height: auto;
 }
 
 /* Additional styles to ensure proper alignment */
@@ -3329,15 +3320,6 @@ input, select, textarea {
     margin: 5px 0;
     font-size: 1em;
     color: #666;
-}
-
-/* Style for the app-logo */
-.app-logo {
-    display: block;
-    margin: 20px 0;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
 }
 
 /* Style for the services container */
