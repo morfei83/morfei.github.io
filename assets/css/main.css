@@ -3231,7 +3231,7 @@ input, select, textarea {
 /* Flexbox container for app section */
 .app-section {
     display: flex;
-    flex-wrap: nowrap; /* Ensure no wrapping occurs */
+    flex-wrap: wrap;
     align-items: flex-start;
     gap: 20px;
 }
@@ -3270,8 +3270,8 @@ input, select, textarea {
 /* Image style */
 .app-image {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensure the image scales correctly within its container */
+    height: auto;
+    object-fit: contain; /* Ensure the image scales correctly within its container */
 }
 
 /* Logo style */
