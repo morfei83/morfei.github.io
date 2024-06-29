@@ -4041,3 +4041,25 @@ ul.features li:hover {
     letter-spacing: normal; /* Prevent letter spacing change on hover */
     font-size: 1em; /* Prevent font size change on hover */
 }
+/* Remove hover background for icons */
+ul.icons li a:hover {
+    background-color: transparent !important; /* Remove background color on hover */
+    color: #49bf9d !important; /* Keep color change on hover */
+    transform: none; /* Prevent size increase on hover */
+}
+
+/* Remove hover background for labeled icons */
+ul.labeled-icons li:hover {
+    background-color: transparent !important; /* Remove background color on hover */
+    color: inherit; /* Keep original text color */
+    transform: none; /* Prevent size increase on hover */
+}
+
+ul.labeled-icons li h3 {
+    color: inherit; /* Inherit the color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+ul.labeled-icons li:hover h3 {
+    color: #49bf9d; /* Color change on hover */
+}
