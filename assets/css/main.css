@@ -2618,12 +2618,10 @@ input, select, textarea {
 		}
 
 		#header > .inner {
-			display: flex;
-    			align-items: center; /* Center vertically */
-    			justify-content: space-between; /* Space out the elements */
-    			flex-direction: row; /* Align items in a row */
-    			padding: 8em 4em;
-   			flex-grow: 1; /* Ensure it grows correctly */
+    			-moz-flex-grow: 1;
+    			-webkit-flex-grow: 1;
+    			-ms-flex-grow: 1;
+    			flex-grow: 1;
     			margin: 0 0 2em 0;
 		}
 
