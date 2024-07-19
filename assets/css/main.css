@@ -4097,22 +4097,6 @@ ul.labeled-icons li:hover h3 {
     box-shadow: 0 4px 8px rgba(73, 191, 157, 0.5); /* Grønn skyggeeffekt */
 }
 
-@media (max-width: 768px) {
-    .expert-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .expert-image-container,
-    .expert-content {
-        max-width: 90%;
-    }
-
-    .expert-content {
-        text-align: center;
-    }
-}
-
 .expert-content {
     flex: 2;
     min-width: 300px;
@@ -4128,6 +4112,23 @@ ul.labeled-icons li:hover h3 {
 
 .expert-content p {
     margin-bottom: 1em;
+}
+
+@media (max-width: 768px) {
+    .expert-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expert-image-container {
+        max-width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .expert-content {
+        text-align: center;
+        max-width: 90%;
+    }
 }
 
 
