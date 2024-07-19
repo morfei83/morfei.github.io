@@ -4107,6 +4107,7 @@ ul.labeled-icons li:hover h3 {
 
 .expert-content h3 {
     margin-top: 0;
+    font-size: 1.8em; /* Øker størrelsen på tittelen for bedre synlighet */
 }
 
 .expert-content p {
@@ -4129,4 +4130,5 @@ ul.labeled-icons li:hover h3 {
 .expert-content .actions .button:hover {
     background-color: #37a07c;
 }
+
 ////////////////////////////////////////////////////////////////
