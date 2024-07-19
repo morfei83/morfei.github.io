@@ -4063,3 +4063,70 @@ ul.labeled-icons li h3 {
 ul.labeled-icons li:hover h3 {
     color: #49bf9d; /* Color change on hover */
 }
+
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+/* Søvnekspert Seksjon */
+#sleep-expert {
+    padding: 4em 0;
+    text-align: center;
+}
+
+#sleep-expert .major {
+    margin-bottom: 2em;
+}
+
+.expert-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.expert-image-container {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.expert-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expert-content {
+    flex: 2;
+    min-width: 300px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.expert-content h3 {
+    margin-top: 0;
+}
+
+.expert-content p {
+    margin-bottom: 1em;
+}
+
+.expert-content .actions {
+    margin-top: 1em;
+}
+
+.expert-content .actions .button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #49bf9d;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.expert-content .actions .button:hover {
+    background-color: #37a07c;
+}
+////////////////////////////////////////////////////////////////
