@@ -4179,8 +4179,8 @@ ul.labeled-icons li:hover h3 {
     gap: 20px;
 }
 
-.app-buttons img {
-    height: 50px;
+.store-button {
+    max-height: 50px;
     width: auto;
 }
 
@@ -4216,5 +4216,6 @@ ul.labeled-icons li:hover h3 {
         max-width: 70%;
     }
 }
+
 
 ////////////////////////////////////////////////////////////////
