@@ -3634,34 +3634,11 @@ p {
     margin: 0 auto;
 }
 
-#app-section .app-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
-}
-
-#app-section .app-logo-container {
-    flex: 1;
-    text-align: center;
-}
-
-#app-section .app-logo {
-    max-width: 150px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-#app-section .app-description {
-    flex: 2;
-    padding: 0 20px;
-}
-
 #app-section .app-description p {
     font-size: 1.2em;
     color: #666;
     line-height: 1.6;
+    margin-bottom: 30px;
 }
 
 #app-section .app-buttons {
@@ -3675,18 +3652,8 @@ p {
 #app-section .store-button img {
     max-width: 140px;
     height: auto;
-}
-
-#app-section .app-image-container {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-#app-section .app-image {
-    max-width: 60%;
-    height: auto;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto;
 }
 
 #app-section .app-privacy p {
@@ -3706,10 +3673,6 @@ p {
 
 /* Media Queries for Responsive Design */
 @media screen and (max-width: 768px) {
-    #app-section .app-info {
-        flex-direction: column;
-    }
-
     #app-section .app-description p {
         font-size: 1em;
     }
@@ -3722,12 +3685,7 @@ p {
     #app-section .store-button img {
         max-width: 120px;
     }
-
-    #app-section .app-image {
-        max-width: 80%;
-    }
 }
-
 
 /* Instagram Section */
 #instagram-section {
