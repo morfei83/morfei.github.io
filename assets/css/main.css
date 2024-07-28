@@ -4403,6 +4403,7 @@ ul.labeled-icons li:hover h3 {
     color: #333;
     margin-bottom: 10px;
     text-align: center;
+    width: 100%;
 }
 
 .header-line {
@@ -4417,6 +4418,7 @@ ul.labeled-icons li:hover h3 {
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .overlay-container {
@@ -4435,6 +4437,7 @@ ul.labeled-icons li:hover h3 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Sentrer innholdet i overlay */
 }
 
 .app-logo {
@@ -4489,6 +4492,7 @@ ul.labeled-icons li:hover h3 {
         text-align: center;
     }
 }
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
