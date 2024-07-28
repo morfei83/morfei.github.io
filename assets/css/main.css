@@ -3638,8 +3638,8 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 #app-section .app-description {
@@ -3718,6 +3718,7 @@ p {
 
     #app-section .app-image {
         max-width: 80%;
+        margin-top: 20px;
     }
 }
 
