@@ -3616,23 +3616,6 @@ p {
     text-align: center;
 }
 
-#app-section .major {
-    padding: 0 20px;
-}
-
-#app-section .major h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-#app-section .header-line {
-    width: 50px;
-    height: 4px;
-    background-color: #1f95bd; /* Grønnfarge */
-    margin: 10px auto 20px auto;
-}
-
 #app-section .app-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -3640,6 +3623,23 @@ p {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
+}
+
+#app-section .major {
+    margin-bottom: 20px; /* Gir avstand mellom header og innhold */
+}
+
+#app-section .major h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin: 0;
+}
+
+#app-section .header-line {
+    width: 50px;
+    height: 4px;
+    background-color: #1f95bd; /* Grønnfarge */
+    margin: 10px auto 20px auto;
 }
 
 #app-section .app-info {
