@@ -3618,8 +3618,15 @@ p {
 
 #app-section .major h2 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     color: #333;
+}
+
+#app-section .header-line {
+    width: 50px;
+    height: 4px;
+    background-color: #66bb6a; /* Grønnfarge */
+    margin: 10px auto 20px auto;
 }
 
 #app-section .app-content {
@@ -3632,8 +3639,9 @@ p {
 }
 
 #app-section .app-logo {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
+    margin-bottom: 20px;
 }
 
 #app-section .app-description p {
@@ -3650,8 +3658,8 @@ p {
     margin-bottom: 30px;
 }
 
-#app-section .store-button {
-    max-width: 150px;
+#app-section .store-button img {
+    max-width: 140px;
     height: auto;
 }
 
@@ -3661,7 +3669,7 @@ p {
 }
 
 #app-section .app-image {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     border: 1px solid #ddd;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -3669,13 +3677,17 @@ p {
 
 #app-section .app-privacy p {
     font-size: 0.9em;
-    color: #555;
+    color: #333;
     margin-top: 20px;
 }
 
 #app-section .app-privacy a {
-    color: #007BFF;
+    color: #333;
     text-decoration: none;
+}
+
+#app-section .app-privacy a:hover {
+    color: #66bb6a; /* Grønnfarge */
 }
 
 /* Media Queries for Responsive Design */
@@ -3686,18 +3698,17 @@ p {
 
     #app-section .app-buttons {
         flex-direction: column;
+        gap: 10px;
     }
 
-    #app-section .store-button {
-        max-width: 100px;
-        margin-bottom: 10px;
+    #app-section .store-button img {
+        max-width: 120px;
+    }
+
+    #app-section .app-image {
+        max-width: 80%;
     }
 }
-
-
-
-
-
 
 /* Instagram Section */
 #instagram-section {
