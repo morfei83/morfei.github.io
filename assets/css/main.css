@@ -4431,25 +4431,30 @@ ul.labeled-icons li:hover h3 {
 
 .app-logo {
     max-width: 100px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px; /* Sentrert logo */
 }
 
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
     flex-wrap: wrap;
+    gap: 20px; /* Mellomrom mellom boksene */
 }
 
 .service {
     flex: 0 1 45%;
-    text-align: left;
+    background-color: #ffffff;
+    text-align: center;
     margin: 10px;
     box-sizing: border-box;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Skyggeeffekt */
 }
 
 .service-icon-container {
-    text-align: center;
     margin-bottom: 10px;
 }
 
@@ -4481,7 +4486,6 @@ ul.labeled-icons li:hover h3 {
         text-align: center;
     }
 }
-
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
