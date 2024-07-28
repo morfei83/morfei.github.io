@@ -4376,12 +4376,33 @@ ul.labeled-icons li:hover h3 {
     padding: 40px 20px;
     text-align: center;
     background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.3; /* Juster opasiteten for ønsket synlighet */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px); /* Juster etter behov */
 }
 
 #two h2 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 .header-line {
@@ -4401,19 +4422,10 @@ ul.labeled-icons li:hover h3 {
 .overlay-container {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-}
-
-.video-chat-image {
-    width: 100%;
-    height: auto;
-    opacity: 0.3;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
 
 .overlay-content {
