@@ -4381,11 +4381,10 @@ ul.labeled-icons li:hover h3 {
 ////////////////////////////////////////////////////////////////
 /* Seksjon Tjenester og priser */
 #two {
-    padding: 40px 20px;
+    padding: 60px 0; /* Økt padding for å unngå overlapping */
     text-align: center;
     background-color: #f9f9f9;
     position: relative;
-    overflow: hidden;
 }
 
 #two .overlay-container {
@@ -4393,14 +4392,13 @@ ul.labeled-icons li:hover h3 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
 #two .overlay-content {
     max-width: 800px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 40px; /* Økt padding for bedre separasjon */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -4409,14 +4407,14 @@ ul.labeled-icons li:hover h3 {
 #two h2 {
     font-size: 2.5em;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 20px; /* Økt margin for bedre plassering */
 }
 
 .header-line {
     width: 50px;
     height: 4px;
     background-color: #1f95bd;
-    margin: 10px auto 20px auto;
+    margin: 0 auto 30px auto; /* Sentrert under overskriften */
 }
 
 #two .app-logo {
@@ -4429,14 +4427,14 @@ ul.labeled-icons li:hover h3 {
     font-size: 1.1em;
     color: #555;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Økt margin for bedre separasjon */
 }
 
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 40px;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -4445,15 +4443,15 @@ ul.labeled-icons li:hover h3 {
     flex: 0 1 45%;
     background-color: #ffffff;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     box-sizing: border-box;
-    padding: 20px;
+    padding: 30px; /* Økt padding for bedre layout */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .service-icon-container {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .service-icon {
@@ -4480,8 +4478,9 @@ ul.labeled-icons li:hover h3 {
     }
 
     .service {
-        max-width: 90%;
+        max-width: 100%;
         text-align: center;
+        margin: 10px 0; /* Bedre spacing for mobil */
     }
 }
 
