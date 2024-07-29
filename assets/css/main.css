@@ -4385,6 +4385,8 @@ ul.labeled-icons li:hover h3 {
     text-align: center;
     background-color: #f9f9f9;
     position: relative;
+    overflow: visible; /* Sørger for at innhold ikke overlapper */
+    min-height: 100vh; /* Sørger for at seksjonen har tilstrekkelig høyde */
 }
 
 #two .overlay-container {
@@ -4397,9 +4399,9 @@ ul.labeled-icons li:hover h3 {
 #two .overlay-content {
     max-width: 800px;
     margin: 0 auto;
-    padding: 0; /* Fjernet padding */
-    border-radius: 0; /* Fjernet avrunding */
-    box-shadow: none; /* Fjernet skyggeeffekt */
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
     text-align: center;
 }
 
@@ -4440,13 +4442,13 @@ ul.labeled-icons li:hover h3 {
 
 .service {
     flex: 0 1 45%;
-    background-color: transparent; /* Ingen bakgrunnsfarge */
+    background-color: transparent;
     text-align: center;
     margin: 10px;
     box-sizing: border-box;
-    padding: 0; /* Fjernet padding */
-    border-radius: 0; /* Ingen avrunding */
-    box-shadow: none; /* Ingen skyggeeffekt */
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .service-icon-container {
