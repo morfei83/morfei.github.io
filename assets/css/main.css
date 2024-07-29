@@ -4395,21 +4395,25 @@ ul.labeled-icons li:hover h3 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+}
+
+#two .header-content {
+    text-align: left; /* Venstrejustering av headerinnholdet */
 }
 
 #two h2 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 10px;
-    text-align: left; /* Justering for overskriften */
+    margin-left: 0; /* Starten av teksten */
 }
 
 .header-line {
     width: 50px;
     height: 4px;
     background-color: #1f95bd;
-    margin: 10px 0 20px 0; /* Flytt linjen til venstre */
+    margin: 0; /* Ingen margin på toppen, linjen plassert direkte under overskriften */
+    margin-top: -5px; /* Juster linjens plassering */
 }
 
 #two .app-logo {
@@ -4478,6 +4482,7 @@ ul.labeled-icons li:hover h3 {
         text-align: center;
     }
 }
+
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
