@@ -4381,12 +4381,12 @@ ul.labeled-icons li:hover h3 {
 ////////////////////////////////////////////////////////////////
 /* Seksjon Tjenester og priser */
 #two {
-    padding: 60px 20px; /* Tilstrekkelig padding for å unngå overlapping */
+    padding: 60px 20px;
     text-align: center;
     background-color: #f9f9f9;
     position: relative;
-    overflow: visible; /* Sørger for at innhold ikke overlapper */
-    min-height: 100vh; /* Sørger for at seksjonen har tilstrekkelig høyde */
+    overflow: visible;
+    min-height: 100vh;
 }
 
 #two .overlay-container {
@@ -4453,11 +4453,11 @@ ul.labeled-icons li:hover h3 {
 
 .service-icon-container {
     margin-bottom: 10px;
+    /* Fjernet margin for ikoner midlertidig */
 }
 
 .service-icon {
-    font-size: 3em;
-    color: #1f95bd;
+    display: none; /* Fjernet ikonvisning midlertidig */
 }
 
 .service h4 {
