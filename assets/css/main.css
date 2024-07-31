@@ -4382,7 +4382,7 @@ ul.labeled-icons li:hover h3 {
 /* Seksjon Tjenester og priser */
 #two {
     padding: 40px 20px;
-    text-align: center;
+    text-align: center; /* Sentrer innholdet i seksjonen */
     background-color: #f9f9f9;
     position: relative;
     overflow: hidden;
@@ -4392,15 +4392,14 @@ ul.labeled-icons li:hover h3 {
     font-size: 2.5em;
     color: #333;
     margin-bottom: 10px;
-    text-align: left; /* Venstrejustering av overskriften */
-    margin-left: 20px; /* Ekstra venstremargin hvis nødvendig */
+    text-align: center; /* Sentrer overskriften */
 }
 
 .header-line {
     width: 50px;
     height: 4px;
-    background-color: #1f95bd; /* Grønnfarge */
-    margin: 10px 0 20px 20px; /* Venstrejustering under overskriften */
+    background-color: #1f95bd; /* Blåfarge */
+    margin: 10px auto 20px auto; /* Sentrer dekorlinjen */
 }
 
 #two p {
@@ -4408,7 +4407,7 @@ ul.labeled-icons li:hover h3 {
     color: #555;
     line-height: 1.6;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: center; /* Sentrer paragraftekst */
 }
 
 .overlay-container {
@@ -4427,36 +4426,41 @@ ul.labeled-icons li:hover h3 {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+    text-align: center; /* Sentrer innholdet i overlay */
 }
 
 .app-logo {
     max-width: 100px;
-    margin-bottom: 20px;
+    margin: 0 auto 20px; /* Sentrer logoen */
 }
 
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Sentrer tjenesteboksene */
     margin-top: 20px;
     flex-wrap: wrap;
+    gap: 20px; /* Mellomrom mellom boksene */
 }
 
 .service {
     flex: 0 1 45%;
-    text-align: left;
+    background-color: transparent;
+    text-align: center; /* Sentrer innholdet i tjenesteboksene */
     margin: 10px;
     box-sizing: border-box;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
 }
 
 .service-icon-container {
-    text-align: center;
+    text-align: center; /* Sentrer ikonene */
     margin-bottom: 10px;
 }
 
 .service-icon {
     font-size: 3em;
-    color: #1f95bd; /* Grønnfarge */
+    color: #1f95bd; /* Blåfarge */
 }
 
 .service h4 {
